@@ -107,7 +107,7 @@ dashboard_project/
 
 ## 🧑‍💻 Автор
 
-**Ваше Имя** – [@your_github](https://github.com/your_username) – your.email@example.com
+**Ваше Имя** – [@yIvanMagomedov](https://github.com/IvanMagomedov/))
 
 Если проект был полезен, поставьте ⭐️ на GitHub!
 
