@@ -107,7 +107,7 @@ dashboard_project/
 
 ## 🧑‍💻 Автор
 
-**Ваше Имя** – [@yIvanMagomedov](https://github.com/IvanMagomedov/))
+**Ваше Имя** – [@IvanMagomedov](https://github.com/IvanMagomedov/))
 
 Если проект был полезен, поставьте ⭐️ на GitHub!
 
