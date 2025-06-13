@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h2>Продажи</h2>
+
+  <form method="get">
+    <label>С:</label>
+    <input type="date" name="start_date" value="{{ start_date }}">
+    <label>По:</label>
+    <input type="date" name="end_date" value="{{ end_date }}">
+    <button type="submit">Фильтровать</button>
+  </form>
+
+  <canvas id="salesChart" width="600" height="300"></canvas>
+
+  <script>
+    const ctx = document.getElementById('salesChart').getContext('2d');
+    const salesChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: {{ labels|safe }},
+        datasets: [{
+          label: 'Сумма продаж',
+          data: {{ values|safe }},
+          borderColor: 'rgba(75, 192, 192, 1)',
+          fill: false
+        }]
+      },
+    });
+  </script>
+
+  <h3>Таблица данных</h3>
+  <table border="1">
+    <tr>
+      <th>Дата</th>
+      <th>Продукт</th>
+      <th>Сумма</th>
+    </tr>
+    {% for record in records %}
+    <tr>
+      <td>{{ record.date }}</td>
+      <td>{{ record.product }}</td>
+      <td>{{ record.amount }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</body>
+</html>
