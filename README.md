@@ -11,7 +11,7 @@
 
 - **Backend:** Django 4.2
 - **Frontend:** Chart.js 3.0, Django Templates
-- **База данных:** SQLite (с возможностью перехода на PostgreSQL)
+- **База данных:** PostgreSQL
 - **Стили:** Bootstrap 5 / Tailwind CSS
 - **Дополнительно:** Фильтрация по дате, админ-панель Django
 
